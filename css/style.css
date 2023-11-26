@@ -1,0 +1,75 @@
+body {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+
+    margin: 0px;
+
+    /*
+    background-image: url("../img-index/background.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    */
+}
+
+.container {
+    perspective: 200px;   /* 3d 환경을 만들기 위한 속성 */
+    position: relative;
+}
+
+#blue-allergy {
+    left: 39.43vw;
+    top: 50.62vh;
+    height: 70%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease; /* 필터 전환 효과 추가 */
+}
+
+#blue-allergy.blink-filter {
+    filter: grayscale(0%); /* 필터가 적용되지 않은 상태 */
+}
+
+.page-front {
+    position: absolute;
+
+    animation-name: floating-fast;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-fast {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(5px, 20px); }
+    to   { transform: translate(0px, -0px); } 
+}
+
+.page-middle {
+    position: absolute;
+    transform: translateZ(-10px);
+    z-index: -1;
+
+    animation-name: floating-slowly;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.page-back {
+    position: absolute;
+    transform: translateZ(-20px);
+    z-index: -1;
+
+    animation-name: floating-slowly;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-slowly {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(-5px, 20px); }
+    to   { transform: translate(0px, -0px); } 
+}
