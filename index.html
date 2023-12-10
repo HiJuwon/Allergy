@@ -2,28 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        margin: 0;
-				overflow: hidden;
-      }
-      html, body {
-        height: 100%;
-      }
-      canvas {
-        display: block;
-      }
-    </style>
+    <title>Allergy</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <canvas id="canvas3d"></canvas>
     <script type="module">
-      import { Application } from './runtime.js';
+      import { Application } from './3d-scene/index-runtime.js';
       const canvas = document.getElementById('canvas3d');
       const app = new Application(canvas);
-      app.load('./scene.splinecode');
+      app.load('./3d-scene/index-scene.code');
     </script>
   </body>
 </html>
-  
