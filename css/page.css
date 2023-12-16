@@ -1,0 +1,51 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#man-face {
+    background-color: black;
+}
+
+#urticaria {
+    background-image: url("../img/allergy1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#urticaria-2 {
+    background-image: url("../img/allergy4-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#urticaria-3 {
+    background-image: url("../img/allergy4-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#urticaria-4 {
+    background-image: url("../img/allergy9.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#eyes {
+    background-image: url("../img/allergy10.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
